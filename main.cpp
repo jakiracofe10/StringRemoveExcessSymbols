@@ -13,8 +13,8 @@ string removeExcess(string s) {
             spaceCount++;
         } else {
             if (spaceCount > 0) {
-                /*remove all indexes (spaces) after first space length equal to number of spaces
-                before next non space index*/
+                /*remove all indexes (spaces) after first space, erase length
+                equal to number of spaces before next non space index*/
                 s.erase(i-spaceCount, spaceCount);
             }
             spaceCount = -1;
